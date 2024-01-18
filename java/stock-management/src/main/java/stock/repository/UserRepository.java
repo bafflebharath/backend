@@ -2,7 +2,7 @@ package stock.repository;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
-import stock.model.User;
+import stock.dto.User;
 
 public interface UserRepository extends MongoRepository<User, String> {
 

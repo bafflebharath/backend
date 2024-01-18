@@ -1,11 +1,15 @@
-package stock.service_Impl;
+package stock.serviceimpl;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
 import stock.dto.User;
 import stock.exception.FirstUserExistsException;
 import stock.repository.UserRepository;
 import stock.service.UserService;
 
+@Service
 public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
@@ -17,17 +21,33 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void registerUser(User request) {
-        if (userRepository.findByUsername(request.getUsername())!=null)
+    public ResponseEntity<String> registerUser(User request) {
+        try {
+            validateUserNotExists(request.getUsername());
+
+            User user = new User();
+            user.setUsername(request.getUsername());
+            user.setPassword(passwordEncoder.encode(request.getPassword()));
+            user.setUserRoles(request.getUserRoles());
+
+            User registeredUser = userRepository.save(user);
+
+            if (registeredUser.getId() != null) {
+                return ResponseEntity.status(HttpStatus.CREATED)
+                        .body("User successfully registered");
+            } else {
+                return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                        .body("Failed to register user");
+            }
+        } catch (Exception ex) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(ex.getMessage());
+        }
+    }
+
+    private void validateUserNotExists(String username) {
+        if (userRepository.findByUsername(username) != null) {
             throw new FirstUserExistsException("First user already exists.");
-
-        // Create a new user
-        User user = new User();
-        user.setUsername(request.getUsername()); // You can set the username as needed
-        user.setPassword(passwordEncoder.encode(request.getPassword())); // Encrypt the password
-        user.setUserRoles(request.getUserRoles()); // You can set the roles as needed
-
-        // Save the user to the database
-        userRepository.save(user);
+        }
     }
 }
