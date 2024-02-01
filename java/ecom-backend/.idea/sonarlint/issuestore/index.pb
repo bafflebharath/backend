@@ -37,3 +37,17 @@ h
 8src/main/java/ecom/payload/response/MessageResponse.java,1\d\1d6304c3d90745daf571f265aa1550320eed8dc4
 L
 src/main/java/ecom/Main.java,f\9\f951e6f89fd8ec96449d6a57ddcff72e236c8e97
+h
+8src/main/java/ecom/exception/CustomExceptionHandler.java,e\6\e6c061e72ba532d834b8b08314320d47fcc15795
+j
+:src/main/java/ecom/exception/FirstUserExistsException.java,f\6\f6150f17a9c1a6b25af806ce191f07e6aabcbca9
+h
+8src/main/java/ecom/exception/UserNotExistsException.java,6\f\6f8ce9b3782855e6c13423b0f7017c06f00dd7f2
+h
+8src/main/java/ecom/exception/RoleNotExistsException.java,6\c\6ceca70403a57518d8b4bdad2a54784d4718317d
+\
+,src/main/java/ecom/utils/ErrorConstants.java,b\d\bd0b5faa8ab574c0055fe4f1250dfd98e973a199
+^
+.src/main/java/ecom/utils/SuccessConstants.java,0\6\06f675816b3f5f454b1f22ea7b8fa8085529f051
+[
++src/main/java/ecom/utils/AuthConstants.java,c\4\c480becefbb02571e1948dcfe18d2c5903abf0ab
