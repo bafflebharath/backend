@@ -18,5 +18,7 @@ public class User {
     @Setter
     private String password;
     @Setter
+    private String emailId;
+    @Setter
         private Set<UserRole> userRoles;
 }

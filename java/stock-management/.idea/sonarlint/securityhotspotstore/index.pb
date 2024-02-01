@@ -1,6 +1,4 @@
 
-M
-src/main/java/stock/Main.java,8\e\8ee0465e0926852ae5828083bd92d1f49f7946c4
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 Q
@@ -15,8 +13,6 @@ k
 ;src/main/java/stock/exception/FirstUserExistsException.java,0\d\0d1a07b1193fb18fae222a54e3cc5e01af11008e
 i
 9src/main/java/stock/exception/CustomExceptionHandler.java,4\5\45bbad2d0e1ef15ff52634f6ff8ccc6d64a0dac1
-e
-5src/main/java/stock/service_Impl/UserServiceImpl.java,e\b\ebb7f51a9b8cf27b94924ff9a0de5bfca66f6c2a
 d
 4src/main/java/stock/serviceimpl/UserServiceImpl.java,f\0\f0750cb17edc38362e2047522f7e6ad140eae73a
 b
@@ -29,3 +25,9 @@ U
 %src/main/java/stock/dto/UserRole.java,7\0\70bc6afc547f83137f07275a0b447ff24c7bb045
 Q
 !src/main/java/stock/dto/Role.java,a\9\a9949085ae08ac9f5ea0ea9577494b95d8ef7627
+_
+/src/main/java/stock/config/SpringFoxConfig.java,2\7\272ca5a712f93fd872c62c74c00862abd5a23253
+i
+9src/main/java/stock/exception/UserNotExistsException.java,d\9\d9279cfba76ebfc112dfe878aba397e9a25aef11
+q
+Asrc/main/java/stock/config/UsernamePwdAuthenticationProvider.java,6\8\6882e605cf17d55c3f5ef3c34a3ad0aab2ee67eb

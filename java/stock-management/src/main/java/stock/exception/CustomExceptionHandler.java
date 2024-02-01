@@ -11,4 +11,9 @@ public class CustomExceptionHandler {
     public ResponseEntity handleFirstUserExistsException(FirstUserExistsException exception){
         return ResponseEntity.badRequest().body("User already exists");
     }
+
+    @ExceptionHandler
+    public ResponseEntity handleUserNotExistsException(UserNotExistsException exception){
+        return ResponseEntity.badRequest().body("User not exists");
+    }
 }
