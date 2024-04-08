@@ -1,4 +1,4 @@
-package ecom.security.jwt;
+package ecom.config.jwt;
 
 import java.io.IOException;
 

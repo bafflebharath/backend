@@ -1,4 +1,4 @@
-package ecom.security.services;
+package ecom.config.services;
 
 import ecom.dto.User;
 import ecom.repository.UserRepository;

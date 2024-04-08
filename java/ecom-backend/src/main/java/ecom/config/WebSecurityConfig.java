@@ -1,9 +1,9 @@
-package ecom.security;
+package ecom.config;
 
-import ecom.security.jwt.AuthEntryPointJwt;
-import ecom.security.jwt.AuthTokenFilter;
-import ecom.security.jwt.JwtUtils;
-import ecom.security.services.UserDetailsServiceImpl;
+import ecom.config.jwt.AuthEntryPointJwt;
+import ecom.config.jwt.AuthTokenFilter;
+import ecom.config.jwt.JwtUtils;
+import ecom.config.services.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

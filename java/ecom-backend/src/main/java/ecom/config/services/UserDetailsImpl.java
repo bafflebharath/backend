@@ -1,4 +1,4 @@
-package ecom.security.services;
+package ecom.config.services;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import ecom.dto.User;

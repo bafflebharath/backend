@@ -1,6 +1,6 @@
-package ecom.security.jwt;
+package ecom.config.jwt;
 
-import ecom.security.services.UserDetailsServiceImpl;
+import ecom.config.services.UserDetailsServiceImpl;
 import ecom.utils.AuthConstants;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

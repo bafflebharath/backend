@@ -1,6 +1,6 @@
-package ecom.security.jwt;
+package ecom.config.jwt;
 
-import ecom.security.services.UserDetailsImpl;
+import ecom.config.services.UserDetailsImpl;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
 import org.slf4j.Logger;
