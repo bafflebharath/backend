@@ -31,3 +31,5 @@ i
 9src/main/java/stock/exception/UserNotExistsException.java,d\9\d9279cfba76ebfc112dfe878aba397e9a25aef11
 q
 Asrc/main/java/stock/config/UsernamePwdAuthenticationProvider.java,6\8\6882e605cf17d55c3f5ef3c34a3ad0aab2ee67eb
+]
+-src/main/java/stock/config/SwaggerConfig.java,d\6\d662c5e69f8f7e745e33d9f54a62adbdc607b947
