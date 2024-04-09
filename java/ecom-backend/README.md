@@ -35,6 +35,7 @@ To follow along with the course, ensure you have the following software installe
 - Java Development Kit (JDK)
 - Spring Boot
 - MongoDB
+- MongoDB Compass
 - Postman
 
 ## Installation Steps
@@ -53,7 +54,10 @@ Follow these steps to set up the environment for running the course materials:
     - Install MongoDB on your machine by following the official installation guide: [MongoDB Installation](https://docs.mongodb.com/manual/installation/)
     - Start the MongoDB server by running `mongod` in your terminal/command prompt.
 
-4. **Postman**:
+4. **MongoDB Compass**:
+    - Download and install MongoDB Compass from the official website: [MongoDB Compass](https://www.mongodb.com/try/download/compass)
+    - MongoDB Compass provides a graphical user interface to interact with MongoDB databases.
+
+5. **Postman**:
     - Download and install Postman from the official website: [Download Postman](https://www.postman.com/downloads/)
     - Postman will be used to interact with the RESTful APIs provided by the Spring Boot application.
-
